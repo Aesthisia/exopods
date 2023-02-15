@@ -2,7 +2,7 @@ version: "3"
 
 services:
   aesthisia:
-    name: exopods
+    container_name: exopods
     image: aesthisia/exopods:rc-1.0.01
     environment:
       HOST_URL: "http://localhost"
