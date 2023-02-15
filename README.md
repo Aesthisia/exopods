@@ -66,10 +66,7 @@ The logging platform provides an intuitive web interface for managing and monito
 
 To check the logs:
 
-![](https://raw.githubusercontent.com/Aesthisia/exopods/1e7e0f6b5906619c9e345ce2c4cb497684efbe9f/logs.png?token=GHSAT0AAAAAAB2WGQHCS6IM4Z256PZJUY4EY7MOVWA)
-
-
-or you can check the logs by clicking View Logs in container detail page.
+You can click on little file icon on the container list page or you can check the logs by clicking View Logs in container detail page.
 
 ## Version
 
