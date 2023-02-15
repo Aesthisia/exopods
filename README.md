@@ -33,6 +33,8 @@ Note: Currently exopods support only linux/amd64 based os images.
 
 ### Deploy on docker host
 
+Exopod application will be running on internal port 8001 inside the container, you can change external port by passing the `-p <external-port>:8001`, internal port can not be changed.
+
 
 
 > sudo docker run -d -v /var/run/docker.sock:/var/run/docker.sock -e "HOST_URL=http://localhost" --name exopods -p 8001:8001 aesthisia/exopods:rc-1.0.01
