@@ -2,7 +2,9 @@
 
 New age web based container management &amp; logging platform for developers.
 
-Docker is a popular platform for containerization and management of applications. This logging platform aims to simplify the process of managing and monitoring Docker containers and their logs.
+Exopods is a platform for containerization and management of applications. This logging platform aims to simplify the process of managing and monitoring Docker containers and their logs.
+
+Current version `rc-1.0.01` is a alpha release, You might encounter some issues. We have already listed the know issues if you are facing any other issues, feel free to raise an issue in this repo.
 
 ## Features
 
@@ -14,37 +16,54 @@ Docker is a popular platform for containerization and management of applications
 
 ## Getting Started
 
-To get started with this logging platform, you need to have a basic understanding of Docker and its containers. You also need to have Docker installed on your system.
+To get started with exopods platform, you need to have a basic understanding of Docker and its containers. You also need to have Docker installed on your system.
+Note: Currently exopods support only linux/amd64 based os images. 
 
 ### Prerequisites
 
 - Docker
-- Docker Compose
+- Docker Compose(optional)
 
-### Installation
+## Installation
 
-1. Clone the repository:
+Before starting the container make sure you change the `HOST_URL`, it should be same as the host, in which you will be accessing the exopods. For example: if you are using ec2 linux, use public ip as host url, `http://xx.xxx.xx.xx:8001`
 
-
-2. Navigate to the project directory:
-
-3. Start the containers using Docker Compose:
+### Deploy on docker host
 
 
-4. Access the logging platform through a web browser at `http://localhost:3000`.
+```
+sudo docker run -d \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -e "HOST_URL=http://localhost:8001" \
+  --name exopods \
+  -p 80:8001 \
+  aesthisia/exopods:rc-1.0.01
+```
+
+### Deploy on docker-compose
+
+Clone the repo or copy & create a docker-compose.yaml & paste the content from the file present in this repo. Also make sure to change the `HOST_URL` in docker-compose.yml. 
+
+```
+sudo docker-compose up -d
+```
+
+
+Navigate to the host url & you will be redirected to the login page. Also make sure desired port is open & not being blocked by your firewall. 
+
 
 ### Usage
 
 The logging platform provides an intuitive web interface for managing and monitoring Docker containers and their logs. You can perform the following tasks:
 
 - View a list of all containers and their status.
-- Start, stop, and restart containers.
+- Start, stop, and restart containers(To be added)
 - View logs for a specific container in real-time.
-- Search and filter logs by container, image, and time.
+- Search and filter logs by container, image, and time.(To be added)
 
-### Code Snippets
+### Version
 
-Here's an example of how to use the API to retrieve logs for a specific container:
+This is an Alpha release, `rc-1.0.01` available on [Dockerhub](https://hub.docker.com/repository/docker/aesthisia/exopods/general).
 
 
 ### Docker Resources
@@ -55,6 +74,16 @@ Here are some resources to help you learn more about Docker:
 - [Docker Compose Documentation](https://docs.docker.com/compose/)
 - [Docker Hub](https://hub.docker.com/)
 
-## Contributing
+### Docker Resources
 
-We welcome contributions to this logging platform. If you have an idea or a bug to report, please open an issue. If you would like to contribute code, please fork the repository and submit a pull request.
+Some of the known issue:
+
+- Refresh page might not work in some cases, go back to `HOST_URL` to restart your session.
+- Log window may look hovering over the screen in case of high res screens. 
+- If container list doesn't shows up first time then close the session & re-login again or go back to `HOST_URL`.
+
+If you are facing any other issues, please raise a issue request or send us email at info@aesthisia.com.
+
+
+
+Made with by [Aesthisia](https://www.linkedin.com/company/aesthisia)
