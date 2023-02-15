@@ -72,6 +72,10 @@ You can click on little file icon on the container list page or you can check th
 
 This is an Alpha release, `rc-1.0.01` available on [Dockerhub](https://hub.docker.com/repository/docker/aesthisia/exopods/general).
 
+## Security & Privacy
+
+Exopod is a secure & closed system & it run on your environment, it doesn't require any backend or external resources. We strongly respect your privacy & we do not collect any logs or information about host. Your data stays with in your environment. 
+
 
 ## Docker Resources
 
