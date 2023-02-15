@@ -52,7 +52,7 @@ sudo docker-compose up -d
 ```
 
 
-Navigate to the host url & you will be redirected to the login page. Also make sure desired port is open & not being blocked by your firewall. 
+Navigate to the host url & you will be redirected to the login page. Also make sure desired port is open & not being blocked by your firewall. Default username is `admin` & password `exopods`
 
 
 ### Usage
