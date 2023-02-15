@@ -29,7 +29,7 @@ Note: Currently exopods support only linux/amd64 based os images.
 
 ## Installation
 
-Before starting the container make sure you change the `HOST_URL`, it should be same as the host, in which you will be accessing the exopods. For example: if you are using ec2 linux, use public ip as host url, `http://xx.xxx.xx.xx:8001`
+❗❗ Important: Before starting the container make sure you change the `HOST_URL`, it should be same as the host, in which you will be accessing the exopods. For example: if you are using ec2 linux, use public ip as host url, `http://xx.xxx.xx.xx:8001`
 
 ### Deploy on docker host
 
