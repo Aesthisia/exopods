@@ -64,6 +64,13 @@ The logging platform provides an intuitive web interface for managing and monito
 - View logs for a specific container in real-time.
 - Search and filter logs by container, image, and time.(To be added)
 
+To check the logs:
+
+![](https://raw.githubusercontent.com/Aesthisia/exopods/1e7e0f6b5906619c9e345ce2c4cb497684efbe9f/logs.png?token=GHSAT0AAAAAAB2WGQHCS6IM4Z256PZJUY4EY7MOVWA)
+
+
+or you can check the logs by clicking View Logs in container detail page.
+
 ## Version
 
 This is an Alpha release, `rc-1.0.01` available on [Dockerhub](https://hub.docker.com/repository/docker/aesthisia/exopods/general).
