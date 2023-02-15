@@ -1,5 +1,8 @@
 ## Exopods: Container Management and Logging
 
+
+Made with 🧡 by [Aesthisia](https://www.linkedin.com/company/aesthisia)
+
 New age web based container management &amp; logging platform for developers.
 
 Exopods is a platform for containerization and management of applications. This logging platform aims to simplify the process of managing and monitoring Docker containers and their logs.
@@ -61,12 +64,12 @@ The logging platform provides an intuitive web interface for managing and monito
 - View logs for a specific container in real-time.
 - Search and filter logs by container, image, and time.(To be added)
 
-### Version
+## Version
 
 This is an Alpha release, `rc-1.0.01` available on [Dockerhub](https://hub.docker.com/repository/docker/aesthisia/exopods/general).
 
 
-### Docker Resources
+## Docker Resources
 
 Here are some resources to help you learn more about Docker:
 
@@ -74,9 +77,9 @@ Here are some resources to help you learn more about Docker:
 - [Docker Compose Documentation](https://docs.docker.com/compose/)
 - [Docker Hub](https://hub.docker.com/)
 
-### Docker Resources
+## Known Issues
 
-Some of the known issue:
+Some of the known issue & temporary fix:
 
 - Refresh page might not work in some cases, go back to `HOST_URL` to restart your session.
 - Log window may look hovering over the screen in case of high res screens. 
@@ -85,5 +88,13 @@ Some of the known issue:
 If you are facing any other issues, please raise a issue request or send us email at info@aesthisia.com.
 
 
+## Links
 
-Made with by [Aesthisia](https://www.linkedin.com/company/aesthisia)
+Linkedin: [https://www.linkedin.com/company/aesthisia](https://www.linkedin.com/company/aesthisia)
+
+Website: [https://aesthisia.com/](https://aesthisia.com/)
+
+Github: [https://github.com/Aesthisia](https://github.com/Aesthisia)
+
+Dockerhub: [https://hub.docker.com/repository/docker/aesthisia/exopods/general](https://hub.docker.com/repository/docker/aesthisia/exopods/general)
+
