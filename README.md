@@ -35,12 +35,7 @@ Note: Currently exopods support only linux/amd64 based os images.
 
 
 ```
-sudo docker run -d \
-  -v /var/run/docker.sock:/var/run/docker.sock \
-  -e "HOST_URL=http://localhost:8001" \
-  --name exopods \
-  -p 8001:8001 \
-  aesthisia/exopods:rc-1.0.01
+sudo docker run -d -v /var/run/docker.sock:/var/run/docker.sock -e "HOST_URL=http://localhost:8001" --name exopods -p 8001:8001 aesthisia/exopods:rc-1.0.01
 ```
 
 ### Deploy on docker-compose
