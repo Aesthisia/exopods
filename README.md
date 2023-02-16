@@ -29,25 +29,18 @@ Note: Currently exopods support only linux/amd64 based os images.
 
 ## Installation
 
-❗❗ Important: Before starting the container make sure you change the `HOST_URL`, it should be same as the host, in which you will be accessing the exopods. For example: if you are using ec2 linux, use public ip as host url, `http://xx.xxx.xx.xx:8001`
+❗❗ Important: Make sure to map the port correctly. 
 
 ### Deploy on docker host
 
 Exopod application will be running on internal port 8001 inside the container, you can change external port by passing the `-p <external-port>:8001`, internal port can not be changed.
 
 
+```
+sudo docker run -d -v /var/run/docker.sock:/var/run/docker.sock --name exopods -p 8001:8001 aesthisia/exopods:rc-1.0.01
+```
 
-> sudo docker run -d -v /var/run/docker.sock:/var/run/docker.sock -e "HOST_URL=http://localhost" --name exopods -p 8001:8001 aesthisia/exopods:rc-1.0.01
-
-
-
-For example
-
-If you are running on a port(e.g. 8001)
-the HOST_URL="http://13.65.23.234:8001"
-
-If you are running on 80
-the HOST_URL="http://13.65.23.234"
+Then your app will be running on HOST:8001, navigate to browser, the use public ip or localhost to access exopods. e.g. http://xx.xx.xx.xx:8001
 
 
 ### Deploy on docker-compose
