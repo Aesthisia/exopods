@@ -4,8 +4,6 @@ services:
   aesthisia:
     container_name: exopods
     image: aesthisia/exopods:rc-1.0.01
-    environment:
-      HOST_URL: "http://localhost"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
     ports:
