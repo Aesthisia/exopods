@@ -9,6 +9,9 @@ Exopods is a platform for containerization and management of applications. This 
 
 Current version `rc-1.0.01` is a alpha release, You might encounter some issues. We have already listed the know issues if you are facing any other issues, feel free to raise an issue in this repo.
 
+
+![Container Details](https://raw.githubusercontent.com/aesthisia/exopods/main/Frame%20309.png)
+
 ## Features
 
 - Easy management of Docker containers.
