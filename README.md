@@ -93,10 +93,12 @@ Some of the known issue & temporary fix:
 - Log window may look hovering over the screen in case of high res screens. 
 - If container list doesn't shows up first time then close the session & re-login again or go back to `HOST_URL`.
 
-If you are facing any other issues, please raise a issue request or send us email at info@aesthisia.com.
+If you are facing any other issues, please raise a issue request or join our [Discord](https://discord.gg/dhHZAvMvvB)
 
 
 ## Links
+
+Discord: [Discord](https://discord.gg/dhHZAvMvvB)
 
 Linkedin: [https://www.linkedin.com/company/aesthisia](https://www.linkedin.com/company/aesthisia)
 
