@@ -57,6 +57,13 @@ sudo docker-compose up -d
 
 Navigate to the host url & you will be redirected to the login page. Also make sure desired port is open & not being blocked by your firewall. Default username is `admin` & password `exopods`
 
+### Configuration
+
+
+| Parameter                                 | Description                                                                                                                                                                                    | Default                             |
+|-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
+| `-e PASSWORD`                                | Setup a custom password                | exopods                             |
+
 
 ### Usage
 
@@ -79,6 +86,10 @@ This is an Alpha release, `rc-1.0.01` available on [Dockerhub](https://hub.docke
 
 Exopod is a secure & closed system & it run on your environment, it doesn't require any backend or external resources. We strongly respect your privacy & we do not collect any logs or information about host. Your data stays with in your environment. 
 
+### Image Scanning
+ 
+Container image scanning has been already done & we are updating required versions with each release. 
+
 
 ## Docker Resources
 
@@ -91,17 +102,14 @@ Here are some resources to help you learn more about Docker:
 ## Known Issues
 
 Some of the known issue & temporary fix:
-
-- Refresh page might not work in some cases, go back to `HOST_URL` to restart your session.
-- Log window may look hovering over the screen in case of high res screens. 
-- If container list doesn't shows up first time then close the session & re-login again or go back to `HOST_URL`.
+- long container names can look out of the box. 
 
 If you are facing any other issues, please raise a issue request or join our [Discord](https://discord.gg/dhHZAvMvvB)
 
 
 ## Links
 
-Discord: [Discord](https://discord.gg/dhHZAvMvvB)
+Discord: [https://discord.gg/dhHZAvMvvB](https://discord.gg/dhHZAvMvvB)
 
 Linkedin: [https://www.linkedin.com/company/aesthisia](https://www.linkedin.com/company/aesthisia)
 
