@@ -7,7 +7,7 @@ New age web based container management &amp; logging platform for developers.
 
 Exopods is a platform for containerization and management of applications. This logging platform aims to simplify the process of managing and monitoring Docker containers and their logs.
 
-Current version `rc-1.0.01` is a alpha release, You might encounter some issues. We have already listed the know issues if you are facing any other issues, feel free to raise an issue in this repo.
+Current version `rc-1.0.02` is a alpha release, You might encounter some issues. We have already listed the know issues if you are facing any other issues, feel free to raise an issue in this repo.
 
 
 ![Container Details](https://s3.ap-south-1.amazonaws.com/hello.aesthisia.com/Frame+309.png)
@@ -40,7 +40,7 @@ Exopod application will be running on internal port 8001 inside the container, y
 
 
 ```
-sudo docker run -d -v /var/run/docker.sock:/var/run/docker.sock --name exopods -p 8001:8001 aesthisia/exopods:rc-1.0.01
+sudo docker run -d -v /var/run/docker.sock:/var/run/docker.sock --name exopods -p 8001:8001 aesthisia/exopods:rc-1.0.02
 ```
 
 Then your app will be running on HOST:8001, navigate to browser, the use public ip or localhost to access exopods. e.g. http://xx.xx.xx.xx:8001
@@ -80,7 +80,7 @@ You can click on little file icon on the container list page or you can check th
 
 ## Version
 
-This is an Alpha release, `rc-1.0.01` available on [Dockerhub](https://hub.docker.com/repository/docker/aesthisia/exopods/general).
+This is an Alpha release, `rc-1.0.02` available on [Dockerhub](https://hub.docker.com/repository/docker/aesthisia/exopods/general).
 
 ## Security & Privacy
 
